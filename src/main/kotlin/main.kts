@@ -60,10 +60,16 @@ fun printListOfFriends(){
     }
 }
 
-class pet(name : String, age : String, typeofAnimal : String) {
-    var name = name
-    var age = age
-    var typeofAnimal = typeofAnimal
+class pet() {
+    var name
+    var age
+    var typeofAnimal
+
+    constructor(name: String ,age : String, typeofAnimal: String){
+        this.name = name
+        this.age = age
+        this.typeofAnimal = typeofAnimal
+    }
 
     fun petInfo(){
         println("\nThis is your pet $name and its $age!" +
